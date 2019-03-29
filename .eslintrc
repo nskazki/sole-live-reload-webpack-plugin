@@ -1,0 +1,43 @@
+{
+  "parser": "babel-eslint",
+  "rules": {
+    "no-console": "off",
+    "no-extra-boolean-cast": "off",
+    "eol-last": [ "warn", "always" ],
+    "indent": "off",
+    "indent-legacy": [ "warn", 2 ],
+    "linebreak-style": [ "warn", "unix" ],
+    "no-trailing-spaces": "warn",
+    "no-unused-vars": [ "warn", {
+        "args": "all",
+        "argsIgnorePattern": "^_",
+        "caughtErrors": "all",
+        "caughtErrorsIgnorePattern": "^_"
+    }],
+    "semi": [ "warn", "never" ],
+    "eqeqeq": [ "warn", "always" ],
+    "quotes": [ "warn", "single", { "avoidEscape": true } ],
+    "no-var": [ "warn" ],
+    "prefer-const": [ "warn" ],
+    "comma-dangle": [ "warn", "never"],
+    "no-useless-escape": "warn",
+    "func-call-spacing": [ "warn", "never" ],
+    "array-callback-return": "error",
+    "no-bitwise": "error",
+    "no-loop-func": "error",
+    "no-multi-str": "error",
+    "no-sequences": "error",
+    "no-new-wrappers": "error",
+    "no-octal-escape": "error",
+    "no-self-compare": "error",
+    "no-throw-literal": "error",
+    "no-useless-return": "error",
+    "no-floating-decimal": "error",
+    "no-shadow-restricted-names": "error",
+    "no-debugger": "warn"
+  },
+  "env": {
+    "node": true,
+  },
+  "extends": "eslint:recommended"
+}
