@@ -1,6 +1,6 @@
 {
   "name": "sole-live-reload-webpack-plugin",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "webpack plugin that useful to restrict the number of live-reload scripts to one when multiple bundles are used on a page which helps to fix infinite page reload in some causes",
   "main": "index.js",
   "repository": "https://github.com/nskazki/sole-live-reload-webpack-plugin",
