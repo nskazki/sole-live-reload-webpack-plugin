@@ -20,7 +20,7 @@
     "test": "eslint ."
   },
   "dependencies": {
-    "deline": "^1.0.4",
+    "lodash.template": "^4.5.0",
     "resolve": "^1.12.0",
     "text-transform-loader": "^2.0.0"
   },
