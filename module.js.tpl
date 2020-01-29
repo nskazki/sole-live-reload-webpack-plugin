@@ -16,12 +16,12 @@ function trySLR() {
     markSLR()
     initSLR()
     debug('sole-live-reload: root script has been registered!', __resourceQuery)
-  } else if (parentRequestAttempts < parentRequestLimit) {
-    initParentRequest()
-  } else {
+  } else if (parentRequestAttempts >= parentRequestLimit) {
     markSLR()
     initSLR()
     debug('sole-live-reload: timeout script has been registered!', __resourceQuery)
+  } else {
+    initParentRequest()
   }
 }
 
