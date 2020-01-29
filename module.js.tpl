@@ -7,12 +7,11 @@ var parentRequestAttempts = 0
 trySLR()
 
 function trySLR() {
-  if (window.__slr__ && window.__slr__[__resourceQuery]) {
-    debug('sole-live-reload: script has been ALREADY registered!', __resourceQuery)
-  } else if (module.hot) {
-    markSLR()
+  if (module.hot) {
     initSLR()
     debug('sole-live-reload: HMR plugin is present!', __resourceQuery)
+  } else if (window.__slr__ && window.__slr__[__resourceQuery]) {
+    debug('sole-live-reload: script has been ALREADY registered!', __resourceQuery)
   } else if (window.parent === window) {
     markSLR()
     initSLR()
