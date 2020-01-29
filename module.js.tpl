@@ -9,6 +9,10 @@ trySLR()
 function trySLR() {
   if (window.__slr__ && window.__slr__[__resourceQuery]) {
     debug('sole-live-reload: script has been ALREADY registered!', __resourceQuery)
+  } else if (module.hot) {
+    markSLR()
+    initSLR()
+    debug('sole-live-reload: HMR plugin is present!', __resourceQuery)
   } else if (window.parent === window) {
     markSLR()
     initSLR()
