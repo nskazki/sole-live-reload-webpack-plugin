@@ -83,13 +83,11 @@ function countParents(child, counter) {
 }
 
 function debug() {
-  if (window.localStorage && window.localStorage.debugSLR) {
-    if (console && console.debug) {
+  try {
+    if (window.localStorage.debugSLR) {
       console.debug.apply(console, arguments)
-    } else if (console && console.log) {
-      console.log.apply(console, arguments)
     }
-  }
+  } catch (_err) {}
 }
 
 function initSLR() {
