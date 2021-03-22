@@ -1,6 +1,7 @@
 # sole-live-reload-webpack-plugin
 
-Webpack plugin that useful to restrict the number of [`live-reload`](https://github.com/webpack/webpack-dev-server/blob/9f899ff99ad73a1e712aff2ef84104304986c955/client-src/default/index.js) scripts to one when multiple bundles are used on a page which helps to fix infinite page reload in some causes.
+A Webpack plugin restricting the number of the [`live-reload`](https://github.com/webpack/webpack-dev-server/blob/9f899ff99ad73a1e712aff2ef84104304986c955/client-src/default/index.js) scripts running on the same page to one.
+You don't need it until after you added several bundles build with `webpack-dev-server` to one page.
 
 ```
 yarn -D sole-live-reload-webpack-plugin
