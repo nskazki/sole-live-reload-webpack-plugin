@@ -1,6 +1,6 @@
 {
   "name": "sole-live-reload-webpack-plugin",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "A Webpack plugin restricting the number of the live-reload scripts running on the same page to one",
   "main": "index.js",
   "repository": "https://github.com/nskazki/sole-live-reload-webpack-plugin",
